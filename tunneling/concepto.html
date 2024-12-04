@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Tunneling - Concepto e Importancia</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="/tunneling.html" class="logo">Tunneling</a>
+					</header>
+
+				<!-- Nav -->
+                    <nav id="nav">
+                        <ul class="links">
+                            <li><a href="/index.html">Inicio</a></li>
+                            <li><a href="/redes-perimetrales.html">Redes Perimetrales</a></li>
+                            <li class="active"><a href="/tunneling.html">Tunneling</a></li>
+                            <li><a href="/iot.html">IoT</a></li>
+                            <li><a href="/integrantes.html">Créditos</a></li>
+                        </ul>
+                    </nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Tunneling</h1>
+                                    <p>Concepto e Importancia</p>
+								</header>
+								
+                                <p>La tunelización es una técnica crucial en el campo de las telecomunicaciones y las redes que permite enviar datos de manera segura y eficiente a través de una red, sea esta pública o privada. Básicamente, se trata de encapsular paquetes de datos dentro de otros paquetes, protegiéndolos durante su tránsito por la red.</p>
+                                
+                                <p>Uno de los aspectos más importantes de la tunelización es su capacidad para garantizar la seguridad de los datos. Al encapsular y cifrar la información, se previene el acceso no autorizado y se protege la privacidad de las comunicaciones. Además, la tunelización asegura la integridad de los datos, de manera que estos lleguen a su destino sin sufrir alteraciones.</p>
+                                
+                                <p>
+                                    <span class="image right"><img src="/images/tunneling/concepto1.png" alt=""></span>
+                                    El proceso de tunelización implica varios pasos esenciales. Primero, los datos originales se empaquetan según un protocolo específico, como IP. Luego, estos paquetes se encapsulan dentro de un nuevo encabezado de otro protocolo, como GRE o IPsec, que añade capas de seguridad y dirección. A continuación, los datos encapsulados se envían a través de la red y, una vez llegan a su destino, se desencapsula, retirando los encabezados añadidos para recuperar los datos originales.
+                                </p>
+                                
+                                <p>Para ilustrar la tunelización, se pueden considerar dos ejemplos comunes: VPN (Red Privada Virtual) y GRE (Encapsulación de Enrutamiento Genérico).</p>
+                                
+                                <p>Una VPN utiliza tunelización para establecer conexiones seguras a través de redes públicas como Internet. A través de protocolos como IPsec o SSL/TLS, los datos se cifran y encapsulan, asegurando que la comunicación sea completamente segura.</p>
+                                
+                                <p>
+                                    <span class="image left"><img src="/images/tunneling/concepto2.png" alt=""></span>
+                                    Por otro lado, GRE es un protocolo que permite encapsular una amplia variedad de tipos de paquetes dentro de otros paquetes IP, facilitando la creación de túneles punto a punto entre routers. Sin embargo, GRE no incluye cifrado por defecto, por lo que, aunque flexible, no ofrece el mismo nivel de seguridad que una VPN.
+                                </p>
+                                
+                                <p>Ambas soluciones tienen sus propias ventajas y se eligen en función de las necesidades específicas de la red y de los niveles de seguridad requeridos.</p>
+                                
+
+                            </section>
+
+                            <section>
+                                <h3>Referencias</h3>
+                                <ol>
+                                    <li>Salman, T. (2017). Secure protocols and virtual private networks: An evaluation. Journal of Information Systems Applied Research, 8(2), 24-35</li>
+                                    <li>IEEE. (2023). VPN traffic identification based on tunneling protocol characteristics. IEEE Xplore Digital Library. Retrieved from https://ieeexplore.ieee.org/document/9906397</li>
+                                </ol>
+                            </section>
+
+                            <footer>
+								<div class="pagination">
+                                    <a href="/tunneling.html" class="active previous"> Volver al inicio </a>
+									<a href="/tunneling/protocolos-comunes.html" class="next">Protocolos Comunes</a>
+								</div>
+							</footer>
+
+					</div>
+
+				<!-- Footer -->
+                <footer id="footer">
+                    <section style="text-align: center;">
+                        <h2> Contenido </h2>
+                        <ul>
+                            <h5 style="text-decoration: underline;"><a href="/index.html">Inicio</a></h5>
+                            <h5 style="text-decoration: underline;"><a href="/redes-perimetrales.html">Redes Perimetrales</a></h5>
+                            <h5 style="text-decoration: underline;"><a href="/tunneling.html">Tunneling</a></h5>
+                            <h5 style="text-decoration: underline;"><a href="/iot.html">Internet de las cosas (IoT)</a></h5>
+                            <h5 style="text-decoration: underline;"><a href="/integrantes.html">Créditos</a></h5>
+                        </ul>
+                    </section>
+                    
+                </footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

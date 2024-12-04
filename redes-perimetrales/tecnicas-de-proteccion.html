@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Redes Perimetrales - Técnicas de protección</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="/redes-perimetrales.html" class="logo">Redes Perimetrales</a>
+					</header>
+
+				<!-- Nav -->
+                    <nav id="nav">
+                        <ul class="links">
+                            <li ><a href="/index.html">Inicio</a></li>
+                            <li class="active"><a href="/redes-perimetrales.html">Redes Perimetrales</a></li>
+                            <li><a href="/tunneling.html">Tunneling</a></li>
+                            <li><a href="/iot.html">IoT</a></li>
+                            <li><a href="/integrantes.html">Créditos</a></li>
+                        </ul>
+                    </nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Redes Perimetrales</h1>
+                                    <p>Técnicas de protección</p>
+								</header>
+								<div>
+                                    <h2>Control de acceso mediante listas (ACLs)</h2>
+
+                                    <p>Define reglas específicas para permitir o bloquear tráfico en función de parámetros como direcciones IP, puertos y protocolos. Estas listas son implementadas en routers y firewalls para controlar el acceso según las necesidades de seguridad.</p>
+                                    <p> Existen dos tipos básicos de ACL:</p>
+                                    <dl>
+                                        <dt>ACL del sistema de archivos</dt>
+                                        <dd> Estos funcionan como filtros, administrando el acceso a directorios o archivos. Una ACL de sistema de archivos proporciona instrucciones del sistema operativo en cuanto a los usuarios que tienen permitido acceder al sistema, así como los privilegios a los que tienen derecho una vez que están dentro. </dd>
+                                        <dt>ACL de red</dt>
+                                        <dd> Las ACL de red administran el acceso a una red. Para ello, proporcionan instrucciones a los conmutadores y enrutadores en cuanto a los tipos de tráfico que pueden interactuar con la red. También dictan lo que cada usuario o dispositivo puede hacer una vez que están adentro. </dd>
+                                    </dl>
+
+                                    <p> En los sistemas de archivos, una ACL es una tabla asociada a cada archivo o directorio que determina qué usuarios tienen permiso para realizar acciones específicas, como leer, escribir o ejecutar. Cuando un usuario intenta acceder a un objeto, el sistema operativo consulta esta lista para verificar si el usuario tiene los privilegios necesarios. Por ejemplo, si intentas abrir un archivo reservado para administradores mientras usas una cuenta estándar, el sistema denegará el acceso porque la ACL no te reconoce como autorizado. Este mecanismo garantiza que los archivos sensibles estén protegidos y solo sean accesibles por las personas o grupos adecuados.</p>
+                                    <p>Por otro lado, en el ámbito de las redes, las ACL funcionan como filtros que controlan el tráfico que atraviesa dispositivos como enrutadores o switches. Aquí, en lugar de usuarios, se filtran paquetes de datos en función de reglas predefinidas, como la dirección IP de origen o destino, el puerto utilizado o el protocolo empleado (por ejemplo, TCP o UDP). Estas reglas permiten, por ejemplo, bloquear todo el tráfico entrante excepto solicitudes específicas, como las de navegación web en el puerto 80. De esta manera, las ACL de red protegen los recursos al impedir el acceso no autorizado y gestionan el tráfico para optimizar el rendimiento.</p>
+                                    <p>Las lista de control de acceso (ACL) constan de varios componentes centrales para su función:</p>
+                                    <ul>
+                                        <li><span style="font-weight: 900;">Número de secuencia:</span> El número de secuencia identifica la entrada ACL con un número específico.</li>
+                                        <li><span style="font-weight: 900;">Nombre de ACL:</span> El nombre de la ACL define la entrada de la ACL usando un nombre asignado a ella en lugar de números. En algunos casos, el enrutador permitirá tanto números como letras.</li>
+                                        <li><span style="font-weight: 900;">Comentario:</span> En algunos enrutadores, puede ingresar comentarios, que pueden utilizarse para incluir descripciones más detalladas.</li>
+                                        <li><span style="font-weight: 900;">Declaración:</span> Con una declaración, usted permite o rechaza una fuente usando una máscara o dirección comodín. Una máscara de comodín determina qué elementos de una dirección IP pueden ser examinados por un sistema.</li>
+                                        <li><span style="font-weight: 900;">Protocolo de red:</span> El protocolo de red se puede utilizar para permitir o denegar ciertos protocolos de red, como IP, Intercambio de paquetes de trabajo en Internet (IPX), Protocolo de control de transmisión (TCP), Protocolo de mensajes de control de Internet (ICMP), Protocolo de datagrama de usuario (UDP) u otros.</li>
+                                        <li><span style="font-weight: 900;">Origen o destino:</span> El componente de origen o destino define el destino o la dirección IP de origen como un rango de direcciones o una sola IP. También puede permitir todas las direcciones.</li>
+                                        <li><span style="font-weight: 900;">Registro:</span> Hay dispositivos que pueden mantener un registro cuando encuentran coincidencias de ACL.</li>
+                                        <li><span style="font-weight: 900;">Otros criterios de los LCA avanzados:</span> Algunas listas de control de acceso (ACL) más avanzadas le dan la opción de controlar el tráfico de acuerdo con la precedencia de IP, el tipo de servicio (ToS) o su prioridad derivada de su punto de código de servicios diferenciados (DSCP). DSCP es una arquitectura de red que permite la clasificación y gestión del tráfico en una red.</li>                                        
+                                    </ul>
+                                    <p></p>
+                                </div>
+								<div>
+                                    <h2>Inspección profunda de paquetes (DPI)</h2>
+                                    <p>La inspección profunda de paquetes es una técnica utilizada para inspeccionar y analizar el contenido de los paquetes en tiempo real a medida que fluyen a través de una red, lo que permite el análisis y la toma de decisiones en tiempo real. Se utiliza para diversos propósitos incluyendo la seguridad, la gestión del tráfico, la exfiltración de datos, las violaciones de políticas, el malware, y la calidad del servicio. </p>
+                                    <p>La inspección profunda de paquetes evalúa los paquetes en función de las reglas asignadas por los administradores de red o los ISP. A diferencia del filtrado de paquetes convencional, la inspección profunda de paquetes monitorea el contenido de estos paquetes e identifica de dónde provienen y el servicio o aplicación que los envió. A continuación, decide cómo manejar este tráfico en función de las reglas predefinidas y puede trabajar con filtros para redirigir el tráfico crítico no empresarial procedente de servicios en línea específicos o direcciones IP.</p>
+                                    <p>Hay varias técnicas utilizadas para realizar la DPI y las cuatro técnicas principales de la DPI incluyen:</p>
+                                    <ul>
+                                        <li><span style="font-weight: 900;">Coincidencia de patrón o firma:</span> Este método compara el tráfico de red con una base de datos de firmas de amenazas conocidas. Es eficaz para detectar ataques preexistentes, pero tiene la limitación de no poder identificar ataques nuevos o desconocidos.</li>
+                                        <li><span style="font-weight: 900;">Anomalía de protocolo:</span> Utiliza el enfoque de "denegar por defecto", donde el acceso a la red se bloquea inicialmente, y luego se permite selectivamente solo a los recursos autorizados. Ayuda a prevenir ataques desconocidos y a garantizar que solo los usuarios y dispositivos autorizados accedan a la red.</li>
+                                        <li><span style="font-weight: 900;">Sistema de prevención de intrusiones (IPS):</span> Un IPS no solo detecta amenazas, sino que también toma medidas activas para bloquearlas. Analiza el tráfico en tiempo real utilizando técnicas como la coincidencia de firmas, la detección de anomalías y el comportamiento sospechoso para prevenir ataques.</li>
+                                        <li><span style="font-weight: 900;">Análisis heurístico y de comportamiento:</span>
+                                            <ul>
+                                                <li><span style="font-weight: 900;">Análisis heurístico:</span> Detecta patrones o comportamientos sospechosos mediante reglas o algoritmos, identificando posibles amenazas nuevas o desconocidas (como el malware de "día cero").</li>
+                                                <li><span style="font-weight: 900;">Análisis de comportamiento:</span> Monitorea el comportamiento de sistemas o software y detecta desviaciones de un patrón normal, ayudando a identificar actividades maliciosas que no tienen firmas conocidas.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h2>Seguimiento mediante VLANs</h2>
+                                    <p>Permiten a los administradores de red crear dominios de difusión flexibles para mejorar el rendimiento y la seguridad de las redes. Las VLAN pueden agrupar dispositivos lógicamente, incluso si están físicamente separados, lo que facilita la gestión de recursos en un entorno empresarial.</p>
+                                    <p>Un uso clave es en servidores agrupados, donde un switch habilitado con VLAN puede simular múltiples switches virtuales, representando diferentes subredes sin necesidad de hardware adicional. Esto reduce la cantidad de dispositivos necesarios y mejora la redundancia. Sin embargo, las VLAN no son infalibles; una configuración incorrecta puede permitir que un atacante cruce los límites de las VLAN ("VLAN hopping").</p>
+                                    <p>La seguridad entre VLANs se logra con enrutamiento a nivel de capa 3 y, a menudo, se apoya en listas de control de acceso (ACL). Los switches modernos también pueden usar módulos especializados, como las tarjetas de Cisco, para acelerar este proceso. Además, los firewalls como Cisco FWSM y Check Point VSX permiten proteger la comunicación entre VLANs con políticas avanzadas.</p>
+                                    <p>Las VLAN privadas son otra herramienta útil, especialmente en granjas de servidores, ya que aíslan dispositivos dentro de la misma VLAN según el tipo de puerto configurado (promiscuo, aislado o comunitario). No obstante, incluso estas implementaciones pueden ser vulnerables si no se configuran adecuadamente.</p>
+                                </div>
+                                
+                            </section>
+                            <section>
+                                <h3>Referencias</h3>
+                                <ol>
+                                    <li>Soriano, M. (2014). Seguridad en redes y seguridad de la información. Obtenido de http://improvet. cvut. cz/project/download/C2ES/Seguridad_de_Red_e_Informacion. Pdf.</li>
+                                    <li>Stephen, N., Lenny, Z., Scott, W., Karen, K., & Ronald W, R. (2005). Inside network perimeter security.</li>
+                                </ol>
+                            </section>
+
+                            <footer>
+								<div class="pagination">
+									<a href="/redes-perimetrales/componentes-principales.html" class="previous"> Componentes Principales </a>
+									<a href="/redes-perimetrales/retos-y-mejores-practicas.html" class="next">Retos y Mejores Prácticas</a>
+								</div>
+							</footer>
+
+					</div>
+
+				<!-- Footer -->
+                <footer id="footer">
+                    <section style="text-align: center;">
+                        <h2> Contenido </h2>
+                        <ul>
+                            <h5 style="text-decoration: underline;"><a href="/index.html">Inicio</a></h5>
+                            <h5 style="text-decoration: underline;"><a href="/redes-perimetrales.html">Redes Perimetrales</a></h5>
+                            <h5 style="text-decoration: underline;"><a href="/tunneling.html">Tunneling</a></h5>
+                            <h5 style="text-decoration: underline;"><a href="/iot.html">Internet de las cosas (IoT)</a></h5>
+                            <h5 style="text-decoration: underline;"><a href="/integrantes.html">Créditos</a></h5>
+                        </ul>
+                    </section>
+                    
+                </footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Redes Perimetrales - Componentes Principales</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="/redes-perimetrales.html" class="logo">Redes Perimetrales</a>
+					</header>
+
+				<!-- Nav -->
+                    <nav id="nav">
+                        <ul class="links">
+                            <li ><a href="/index.html">Inicio</a></li>
+                            <li class="active"><a href="/redes-perimetrales.html">Redes Perimetrales</a></li>
+                            <li><a href="/tunneling.html">Tunneling</a></li>
+                            <li><a href="/iot.html">IoT</a></li>
+                            <li><a href="/integrantes.html">Créditos</a></li>
+                        </ul>
+                    </nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Redes Perimetrales</h1>
+                                    <p>Componentes Principales</p>
+								</header>
+								
+                                <div>
+                                    <h3>Firewalls</h3>
+                                    <p>
+                                        <span class="image right"> <img src="/images/redes-perimetrales/componentes-principales1.png" alt=""> </span>
+                                        Un firewall o cortafuegos es un dispositivo que se utiliza para proteger la red interna de una organización. Esta protección se lleva a cabo mediante la separación de la red interna del mundo exterior, o Internet. Todos los mensajes que entran o salen de la red interna a través del firewall son examinados para verificar si cumplen las normas de seguridad especificadas en las reglas del firewall.
+                                    </p>
+                                    <p>
+                                        Antes de instalar un firewall, es preciso definir un conjunto de normas o reglas que constituyen la política de seguridad. Sin este documento no se puede asegurar la red con un firewall. Un firewall puede hacer dos cosas. Puede bloquear o permitir una comunicación. Por lo general, se permiten todas las comunicaciones de la red interna a la red externa (Internet), pero si la política de seguridad establece una regla impidiendo el paso de un tipo de mensajes, el firewall lo bloqueará. Por ejemplo, a veces se impiden conexiones a sitios que no sean de confianza ni a otros lugares considerados una amenaza para la seguridad o inapropiados para la organización. 
+                                    </p>
+                                </div>
+                                <div>
+                                    <h3>IDS (Sistemas de Detección de Intrusos)</h3>
+                                    <p>
+                                        Los IDS son una especie de sistema de gestión de seguridad para los ordenadores y redes. Un IDS recopila y analiza información de un ordenador o una red para identificar posibles violaciones de seguridad, incluyendo tanto el mal uso (ataques desde dentro de la organización) como las intrusiones (ataques de fuera de la organización). 
+                                    </p>
+                                    <p>
+                                        Los IDS utilizan técnicas para evaluar una vulnerabilidad. Las funciones de un IDS incluyen:
+                                        <ul>
+                                            <li>Análisis de los usuarios y actividades del sistema</li>
+                                            <li>Análisis de las configuraciones del sistema y de sus vulnerabilidades</li>
+                                            <li>Evaluación de un sistema e integridad sus archivos</li>
+                                            <li>Capacidad de reconocer patrones típicos de los ataques</li>
+                                            <li>Análisis de los patrones de actividad anormales</li>
+                                        </ul>
+                                    </p>
+                                    <p>
+                                        Un sistema de detección de intrusos (IDS) inspecciona toda la actividad entrante y saliente por la red e identifica patrones sospechosos que pueden identificar un ataque de alguien que trata de entrar o comprometer un sistema.
+                                    </p>
+                                    <p>Hay varias formas de clasificar un IDS:</p>
+
+                                    <dl>
+                                        <dt>Detección de mal uso y detección de anomalías</dt>
+                                        <dd>
+                                            <ul>
+                                                <li><span style="font-weight: 900;">Detección de mal uso:</span> el IDS analiza la información que recopila y la compara con grandes bases de datos de firmas de ataques. Esencialmente, el IDS busca un ataque específico que ya se ha documentado. La técnica de detección de intrusos basada en firma de ataque consiste en la búsqueda de "firmas" (secuencias de acciones típicas de un ataque) en todas las comunicaciones que pasan por la red.</li>
+                                                <li><span style="font-weight: 900;">Detección de anomalías:</span> el administrador del sistema define el estado normal de tráfico de la red, protocolos y tamaños típicos de los intercambios. El detector de anomalías compara el estado en cada momento con el estado normal y a partir de las diferencias se buscan anomalías de comportamiento, que pueden ser debidas a algún ataque.</li>
+                                            </ul>
+                                        </dd>
+                                        <dt>Basados en red o basados en equipos</dt>
+                                        <dd>
+                                            <ul>
+                                                <li><span style="font-weight: 900;">Basados en red, (NIDS, Network-based system):</span> se analizan las comunicaciones que se intercambian por la red. El NIDS puede detectar mensajes maliciosos diseñados de forma que las reglas de filtrado de un firewall no lo detecten.</li>
+                                                <li><span style="font-weight: 900;">Basados en equipo (HIDS, Host-based system):</span> el IDS analiza toda la actividad en cada equipo individual.</li>
+                                            </ul>
+                                        </dd>
+                                        <dt>Sistemas pasivos o sistemas reactivos</dt>
+                                        <dd>
+                                            <ul>
+                                                <li><span style="font-weight: 900;">Sistema pasivo:</span> el IDS detecta un posible fallo de seguridad, registra la información y envía las señales de alerta.</li>
+                                                <li><span style="font-weight: 900;">Sistema reactivo:</span> el IDS responde a una actividad sospechosa cerrando la sesión de un usuario o reprogramando el firewall para bloquear el tráfico de red que tiene su origen en una entidad sospechosa.</li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div>
+                                    <h3>IPS (Sistemas de Prevención de Intrusos)</h3>
+                                    <p>
+                                        Un IPS es un sistema que detecta y frustra automáticamente los ataques informáticos contra los recursos protegidos. A diferencia de un IDS tradicional, que se centra en notificar al administrador las anomalías, un IPS se esfuerza por defender automáticamente el objetivo sin la participación directa del administrador. Esta protección puede implicar el uso de técnicas basadas en firmas o comportamiento para identificar un ataque y luego bloquear el tráfico malicioso o la llamada al sistema antes de que cause daño. En este sentido, un IPS combina la funcionalidad de un firewall y un IDS para ofrecer una solución que bloquea automáticamente las acciones ofensivas tan pronto como detecta un ataque.
+                                    </p>
+                                    <p>
+                                        La función principal de un IPS es analizar el tráfico de datos, identificar patrones sospechosos o conocidos de ataques, y tomar medidas inmediatas para interrumpirlos. Esto puede incluir el bloqueo de paquetes específicos, la terminación de conexiones peligrosas o la desactivación de aplicaciones que muestran comportamientos anómalos. Existen dos tipos principales de IPS: los basados en host (HIPS), que protegen sistemas individuales, y los basados en red (NIPS), que supervisan y protegen segmentos enteros de una red.
+                                    </p>
+                                    <p>
+                                        Se clasifica en dos tipos principales:
+                                    </p>
+                                    <dl>
+                                        <dd>
+                                            <ul>
+                                                <li><span style="font-weight: 900;">Host-Based Intrusion Prevention Systems (HIPS):</span> Protegen sistemas individuales al bloquear ataques y monitorear el comportamiento del sistema operativo.</li>
+                                                <li>
+                                                    <span style="font-weight: 900;">Network-Based Intrusion Prevention Systems (NIPS):</span> Se implementan en la red para proteger segmentos completos de ataques.Hay dos arquitecturas principales:
+                                                    <ul>
+                                                        <li><span style="font-weight: 900;">Dispositivos de estrangulamiento (Chokepoint):</span> Actúan como cortafuegos avanzados y se colocan en puntos estratégicos para segmentar tráfico o proteger dispositivos específicos (por ejemplo, un servidor web).</li>
+                                                        <li><span style="font-weight: 900;">Switches inteligentes (Bump in the Wire):</span> Se integran en la red interna para bloquear ataques sin interrumpir el tráfico legítimo.</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+
+                                    <p>Si bien los IPS ofrecen una capa adicional de protección esencial, no son infalibles ni sustituyen a otras buenas prácticas de seguridad, como la gestión de parches o el endurecimiento del sistema. Más bien, sirven como un mecanismo que permite ganar tiempo en la detección y respuesta ante nuevas amenazas, brindando a las organizaciones una oportunidad valiosa para reaccionar antes de que ocurra un daño significativo.</p>
+                                </div>
+                                <div>
+                                    <h3>Routers y gateways</h3>
+                                    <p>
+                                        Los routers facilitan la conexión entre diferentes redes y pueden incluir filtros de paquetes para restringir el tráfico no deseado. Los gateways actúan como puntos de acceso controlados entre redes internas y externas.
+                                    </p>
+                                </div>
+                                <div>
+                                    <h3>Proxies</h3>
+                                    <p>
+                                        Actúan como intermediarios en las conexiones, mejorando la seguridad y la privacidad al ocultar detalles de la red interna.
+                                    </p>
+                                </div>
+                                
+                                <div class="image main"><img src="/images/redes-perimetrales/componentes-principales2.png" alt="" /></div>
+                            </section>
+                            <section>
+                                <h3>Referencias</h3>
+                                <ol>
+                                    <li>Soriano, M. (2014). Seguridad en redes y seguridad de la información. Obtenido de http://improvet. cvut. cz/project/download/C2ES/Seguridad_de_Red_e_Informacion. Pdf.</li>
+                                    <li>Stephen, N., Lenny, Z., Scott, W., Karen, K., & Ronald W, R. (2005). Inside network perimeter security.</li>
+                                </ol>
+                            </section>
+
+                            <footer>
+								<div class="pagination">
+									<a href="/redes-perimetrales/definición.html" class="previous"> Definición y Propósito </a>
+									<a href="/redes-perimetrales/tecnicas-de-proteccion.html" class="next">Técnicas de protección</a>
+								</div>
+							</footer>
+
+					</div>
+
+				<!-- Footer -->
+                <footer id="footer">
+                    <section style="text-align: center;">
+                        <h2> Contenido </h2>
+                        <ul>
+                            <h5 style="text-decoration: underline;"><a href="/index.html">Inicio</a></h5>
+                            <h5 style="text-decoration: underline;"><a href="/redes-perimetrales.html">Redes Perimetrales</a></h5>
+                            <h5 style="text-decoration: underline;"><a href="/tunneling.html">Tunneling</a></h5>
+                            <h5 style="text-decoration: underline;"><a href="/iot.html">Internet de las cosas (IoT)</a></h5>
+                            <h5 style="text-decoration: underline;"><a href="/integrantes.html">Créditos</a></h5>
+                        </ul>
+                    </section>
+                    
+                </footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
